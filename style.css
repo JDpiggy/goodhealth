@@ -1,0 +1,77 @@
+/* Basic Reset & Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Font */
+    background-color: #e6f2ff; /* Very light blue background */
+    color: #0056b3; /* Darker blue for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Content Container Styling */
+.help-container {
+    background-color: #ffffff; /* White background for the content box */
+    padding: 50px 70px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 86, 179, 0.2); /* Subtle blue shadow */
+    border: 2px solid #007bff; /* Primary blue border */
+}
+
+/* Heading Styling */
+.help-container h1 {
+    font-size: 3.5em; /* Large font size */
+    font-weight: 900; /* Extra bold */
+    color: #007bff; /* Primary blue color */
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Phone Number Styling */
+.phone-number {
+    font-size: 2.5em; /* Large font size, slightly smaller than H1 */
+    font-weight: 700; /* Bold */
+    color: #0056b3; /* Darker blue for good contrast */
+    letter-spacing: 0.5px;
+}
+
+.phone-number a {
+    color: inherit; /* Inherits color from parent (.phone-number) */
+    text-decoration: none; /* Removes underline from link */
+    transition: color 0.3s ease;
+}
+
+.phone-number a:hover {
+    color: #003d80; /* Slightly darker blue on hover for interactivity */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .help-container {
+        padding: 30px 40px;
+    }
+    .help-container h1 {
+        font-size: 2.5em;
+    }
+    .phone-number {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .help-container h1 {
+        font-size: 2em;
+    }
+    .phone-number {
+        font-size: 1.5em;
+    }
+}
